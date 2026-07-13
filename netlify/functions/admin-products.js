@@ -1,0 +1,2 @@
+import {getStore} from "@netlify/blobs";import {authorized,json} from "./_auth.js";
+export default async(req)=>{if(!authorized(req))return json({error:"Unauthorized"},401);let products=await getStore("cloud-furniture").get("products",{type:"json"})||[];return json({products})};

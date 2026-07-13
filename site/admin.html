@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cloud Furniture Admin</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<header><div><b>Cloud Furniture Admin</b><small>Private product manager</small></div><button id="logout" class="ghost" hidden>Logout</button></header>
+<section id="login" class="panel narrow"><h2>Admin Login</h2>
+<form id="loginForm"><label>Password<input id="password" type="password" required></label><button>Login</button><p id="loginMsg"></p></form></section>
+<section id="dash" hidden>
+<div class="panel"><h2 id="formTitle">Add Product</h2>
+<form id="productForm" class="form">
+<input id="id" type="hidden">
+<label>Product name<input id="name" required></label>
+<label>Category<input id="category" placeholder="Steel Bed" required></label>
+<label>Price<input id="price" type="number" min="0" required></label>
+<label>Sizes<input id="sizes" placeholder="6x7, 5x7, 4x7"></label>
+<label>Colours<input id="colours" placeholder="Royal Blue, Maroon, Red"></label>
+<label class="wide">Description<textarea id="description"></textarea></label>
+<label class="wide">Product photo<input id="image" type="file" accept="image/*"></label>
+<label class="check"><input id="visible" type="checkbox" checked> Show publicly</label>
+<div class="actions"><button type="submit">Save Product</button><button type="button" id="clear" class="ghost">Clear</button></div>
+<p id="saveMsg" class="wide"></p></form></div>
+<div class="panel"><h2>Your Products</h2><div id="products"></div></div>
+</section>
+<script src="/admin.js"></script></body></html>
