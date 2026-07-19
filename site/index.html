@@ -1,14 +1,64 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Cloud Furniture Catalog</title><meta name="theme-color" content="#111827">
-<link rel="stylesheet" href="/style.css"></head>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cloud Furniture Dealer Catalog</title>
+<meta name="theme-color" content="#111827">
+<meta name="description" content="Cloud Furniture dealer catalog — quality furniture you can trust.">
+<link rel="stylesheet" href="/style.css">
+</head>
 <body>
-<header><div><b>Cloud Furniture</b><small>Steel Furniture Manufacturer • Kolkata</small></div>
-<a class="wa" href="https://wa.me/919123397611">WhatsApp</a></header>
-<section class="hero"><span>DEALER CATALOG</span><h1>Strong furniture. Clean finish. Direct factory supply.</h1>
-<p>Choose a product and send your inquiry directly on WhatsApp.</p></section>
-<section class="filters"><input id="q" placeholder="Search product"><select id="cat"><option value="">All categories</option></select></section>
-<main id="grid"></main><p id="status">Loading products…</p>
-<footer>Cloud Furniture • Topsia Road, Kolkata • +91 91233 97611</footer>
-<script src="/catalog.js"></script></body></html>
+<header>
+  <div>
+    <b>Cloud Furniture</b>
+    <small>Quality You Can Trust.</small>
+  </div>
+  <span class="dealer-badge">Dealer Catalog</span>
+</header>
+
+<section class="hero">
+  <span>DEALER CATALOG</span>
+  <h1>Quality You Can Trust.</h1>
+  <p>Browse our furniture collection and choose the right model with ease.</p>
+</section>
+
+<section class="filters" aria-label="Catalog filters">
+  <input id="q" type="search" placeholder="Search product" aria-label="Search product">
+  <select id="cat" aria-label="Filter by category"><option value="">All categories</option></select>
+</section>
+
+<main id="grid"></main>
+<p id="status">Loading products…</p>
+
+<footer>
+  <b>Cloud Furniture</b>
+  <span>Manufactured for our trusted dealer network.</span>
+</footer>
+
+<div id="productModal" class="modal" hidden>
+  <div class="modal-backdrop" data-close-modal></div>
+  <section class="product-detail" role="dialog" aria-modal="true" aria-labelledby="detailName">
+    <button class="modal-close" type="button" aria-label="Close product details" data-close-modal>×</button>
+    <img id="detailImage" alt="">
+    <div class="detail-body">
+      <p id="detailCategory" class="eyebrow"></p>
+      <h2 id="detailName"></h2>
+      <div id="detailPrice" class="detail-price"></div>
+      <div class="size-block">
+        <h3>Available Sizes</h3>
+        <div id="detailSizes" class="chips"></div>
+      </div>
+      <div class="dealer-note">
+        <b>Manufactured by Cloud Furniture</b>
+        <span>For pricing and orders, please contact your dealer.</span>
+      </div>
+      <button id="copyLink" class="copy-link" type="button">Copy Product Link</button>
+      <p id="copyMsg" class="copy-msg" aria-live="polite"></p>
+    </div>
+  </section>
+</div>
+
+<script src="/catalog.js"></script>
+</body>
+</html>
