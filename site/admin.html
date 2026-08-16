@@ -11,7 +11,12 @@
 <form id="productForm" class="form">
 <input id="id" type="hidden">
 <label>Product name<input id="name" required></label>
-<label>Category<input id="category" placeholder="Steel Bed" required></label>
+<label>Category<select id="category" required>
+<option value="">Select category</option>
+<option>Steel Bed</option><option>Iron Bed</option><option>Wooden Sofa Cum Bed</option>
+<option>Dining Table</option><option>Dining Chair</option><option>High Back Bed</option>
+<option>Office Chair</option><option>Event Furniture</option><option>Other / Miscellaneous</option>
+</select></label>
 <label>Price<input id="price" type="number" min="0" required></label>
 <label>Sizes<input id="sizes" placeholder="6x7, 5x7, 4x7"></label>
 <label>Colours<input id="colours" placeholder="Royal Blue, Maroon, Red"></label>

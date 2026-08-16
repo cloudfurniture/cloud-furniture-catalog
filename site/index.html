@@ -23,6 +23,17 @@
   <p>Browse our furniture collection and choose the right model with ease.</p>
 </section>
 
+<section class="category-section" aria-labelledby="categoryHeading">
+  <div class="section-heading">
+    <span>SHOP BY CATEGORY</span>
+    <h2 id="categoryHeading">Choose a Category</h2>
+    <p>Select a furniture category to view its collection.</p>
+  </div>
+  <div id="categoryGrid" class="category-grid"></div>
+</section>
+
+<section id="productsSection" class="products-section">
+<div class="products-heading"><div><span>COLLECTION</span><h2 id="categoryTitle">All Products</h2></div><button id="showAll" class="ghost" type="button" hidden>View All Products</button></div>
 <section class="filters" aria-label="Catalog filters">
   <input id="q" type="search" placeholder="Search product" aria-label="Search product">
   <select id="cat" aria-label="Filter by category"><option value="">All categories</option></select>
@@ -30,6 +41,7 @@
 
 <main id="grid"></main>
 <p id="status">Loading products…</p>
+</section>
 <section style="text-align:center;padding:40px 20px;background:#ffffff;border-top:1px solid #e5e7eb;">
   <h2 style="margin-bottom:10px;">📱 Scan to View Latest Collection</h2>
   <p style="color:#666;margin-bottom:20px;">

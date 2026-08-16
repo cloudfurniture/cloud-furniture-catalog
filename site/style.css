@@ -73,3 +73,19 @@ footer b{color:#fff}
   .panel{margin:12px}.form{grid-template-columns:1fr}.wide{grid-column:auto}.item{grid-template-columns:55px 1fr}.item img{width:55px;height:50px}.item-actions{grid-column:1/-1}
 }
 @media(max-width:390px){main{grid-template-columns:1fr}}
+
+/* Category-first catalog */
+.category-section{padding:10px 5% 32px}
+.section-heading{text-align:center;max-width:650px;margin:0 auto 22px}
+.section-heading>span,.products-heading span{font-size:11px;letter-spacing:.16em;font-weight:800;color:var(--muted)}
+.section-heading h2{font-size:30px;margin:7px 0 8px}.section-heading p{color:var(--muted);margin:0}
+.category-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:1100px;margin:auto}
+.category-card{min-height:145px;background:#fff;color:var(--ink);border:1px solid var(--line);border-radius:18px;padding:20px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;text-align:left;box-shadow:0 7px 20px #0000000a;transition:.18s ease}
+.category-card:hover,.category-card:focus-visible{transform:translateY(-3px);box-shadow:0 13px 28px #00000014;border-color:#cbd5e1}
+.category-icon{font-size:30px;margin-bottom:12px}.category-name{font-size:17px;font-weight:800}.category-count{font-size:12px;color:var(--muted);margin-top:5px}
+.products-section{padding-top:20px;border-top:1px solid var(--line);background:#f8fafc}
+.products-heading{padding:0 5% 14px;display:flex;align-items:end;justify-content:space-between;gap:15px}
+.products-heading h2{font-size:28px;margin:5px 0 0}.products-heading button{width:auto}
+.form select{width:100%;padding:12px;border:1px solid #d1d5db;border-radius:9px;background:#fff;margin-top:6px}
+@media(max-width:700px){.category-section{padding:8px 12px 25px}.section-heading h2{font-size:25px}.category-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.category-card{min-height:120px;padding:15px}.category-icon{font-size:26px;margin-bottom:8px}.category-name{font-size:15px}.products-heading{padding:0 12px 12px;align-items:center}.products-heading h2{font-size:23px}.products-heading button{padding:9px 11px;font-size:12px}}
+@media(max-width:390px){.category-grid{grid-template-columns:1fr 1fr}}
